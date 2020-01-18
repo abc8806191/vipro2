@@ -14,7 +14,7 @@ vipro = LINETCR.LINE()
 #vipro.login(qr=True)
 vipro.login(token='ENeA4Y6CgNC62BpgidY0.TQuvGUe+OXXocehvIoIIKa.Q5r8uXB0z0vZCQJqrzFaxlr+0vY7IQtlo10WyAqHfbM=')
 vipro.loginResult()
-print "Vipro-Login Success\n\n=====[Sukses Login]====="
+print ("Vipro-Login Success\n\n=====[Sukses Login]=====")
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
