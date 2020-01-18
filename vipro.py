@@ -525,11 +525,11 @@ def summon(to, nama):
     msg.to = to
     msg.text = "\xe2\x95\x94\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\n"+bb+"\xe2\x95\x9a\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90\xe2\x95\x90"
     msg.contentMetadata ={'MENTION':'{"MENTIONEES":['+aa+']}','EMTVER':'4'}
-    print "[Command] Tag All"
+    print ("[Command] Tag All")
     try:
        vipro.sendMessage(msg)
     except Exception as error:
-       print error          
+       print ("error")          
                         
        
 
@@ -559,7 +559,7 @@ def bot(op):
 	      user_id=op.param2
 	      subprocess.Popen('echo "'+ user_id+'|'+str(op.createdTime)+'" >> dataSeen/%s.txt' % group_id, shell=True, stdout=subprocess.PIPE, )
 	    except Exception as e:
-	      print e
+	      print ("e")
 	
 	    if op.type == 55:
                 try:
